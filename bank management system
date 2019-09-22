@@ -8,7 +8,7 @@ class Bank
 
 	Scanner sc=new Scanner(System.in);
 	
-	//method to open an account
+
 	void openAccount()
 	{ 
 		System.out.print("Enter Account No: ");
@@ -19,7 +19,7 @@ class Bank
 		balance=sc.nextLong();
 	}
 
-	//method to display account details
+	
 	void showAccount()
 	{ 
 		System.out.println(accno+","+name+","+balance);
@@ -34,7 +34,7 @@ class Bank
 		balance=balance+amt;
 	}
 
-	//method to withdraw money
+	
 	void withdrawal()
 	{
 		long amt;
@@ -50,7 +50,7 @@ class Bank
 		}
 	}
 
-	//method to search an account number
+	
 	boolean search(String acn)
 	{ 
 		if(accno.equals(acn))
@@ -68,7 +68,7 @@ class Bank1
 	{
 		Scanner sc=new Scanner(System.in);
 		
-		//create initial accounts
+	
 		System.out.print("How Many Customer you Want to Input : ");
 		int n=sc.nextInt();
 		Bank C[]=new Bank[n];
@@ -78,7 +78,7 @@ class Bank1
 			C[i].openAccount();
 		}
 		
-		//run loop until menu 5 is not pressed
+	
 		int ch;
 		do
 		{
